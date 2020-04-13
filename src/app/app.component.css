@@ -1,0 +1,19 @@
+div{
+    background-color: lightblue;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+}
+
+h1{
+    color: green;
+    }
+    
+    .linkActiv1{
+        color: red;
+}
+
+
+a{
+    font: 20px;
+}

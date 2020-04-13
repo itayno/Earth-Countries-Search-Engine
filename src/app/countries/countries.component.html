@@ -1,0 +1,21 @@
+<div>
+    <input [(ngModel)]="searchText" placeholder="Search Country From Here"><br/>
+    <button (click)='getCountry()'>Click Me</button><br/><br/>
+    <table *ngIf='arr' border="1">
+        <tr style="font-style: oblique">
+            <td><b>Name</b></td>
+            <td><b>Native Name</b></td>
+            <td><b>Capital</b></td>
+            <td><b>Population</b></td>
+            <td><b>Flag</b></td>
+        </tr>
+    
+                <tr *ngFor="let i of arr | filter: searchText">
+                    <td>{{i.name}}</td>
+                    <td>{{i.nativeName}}</td>
+                    <td>{{i.capital}}</td>
+                    <td>{{i.population}}</td>
+                    <td><img src="{{i.flag}}" /></td>
+                </tr>
+    </table>
+</div>
