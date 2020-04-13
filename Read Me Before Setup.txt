@@ -1,0 +1,3 @@
+1.open EarthCountries folder in VC
+2.run NPM INSTALL -> then NG SERVE 
+3.enjoy :)
